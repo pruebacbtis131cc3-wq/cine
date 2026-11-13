@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cineteca El Cbtis 131</title>
+  <link rel="stylesheet" href="cine1.css">
+</head>
+<body>
+  <header>
+    <div class="logos">
+      <img src="logo1.png" alt="Logo del cine">
+      <img src="oo.png" alt="Logo del CBTis">
+    </div>
+    <nav>
+      <a href="#cartelera">Cartelera</a>
+      <a href="boletos.html">Boletos</a>
+      <a href="#horarios">Horarios</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+  <section class="portada">
+    <h1>Bienvenido a la Cineteca El Cbtis 131</h1>
+    <p>Compra tus boletos y escoge tu asiento.</p>
+  </section>
+  <section id="cartelera">
+    <h2>Cartelera</h2>
+    <div class="filtros">
+      <button onclick="filtrar('todas')">Todas</button>
+      <button onclick="filtrar('drama')">Drama</button>
+      <button onclick="filtrar('accion')">Acción</button>
+      <button onclick="filtrar('terror')">Terror</button>
+    </div>
+    <div class="peliculas">
+      <div class="pelicula drama">
+        <img src="amarte.jpg" alt="Poster de Amarte duele">
+        <h3>Amarte duele</h3>
+        <p>Drama</p>
+      </div>
+      <div class="pelicula terror">
+        <img src="charro.jpg" alt="Poster de La venganza del Charro Negro">
+        <h3>La venganza del Charro Negro</h3>
+        <p>Terror</p>
+      </div>
+      <div class="pelicula accion">
+        <img src="spider.jpg" alt="Poster de Spider-Man">
+        <h3>Spider-Man</h3>
+        <p>Acción</p>
+      </div>
+      <div class="pelicula terror">
+        <img src="hallowen.jpg" alt="Poster de Halloween: El final">
+        <h3>Halloween: El final</h3>
+        <p>Terror</p>
+      </div>
+      <div class="pelicula terror">
+        <img src="masacre.jpg" alt="Poster de Masacre en Texas">
+        <h3>Masacre en Texas</h3>
+        <p>Terror</p>
+      </div>
+    </div>
+  </section>
+  <section id="horarios">
+    <h2>Horarios</h2>
+    <table>
+      <tr><th>Día</th><th>Función</th></tr>
+      <tr><td>Lunes a viernes</td><td>4:00 pm y 7:00 pm</td></tr>
+      <tr><td>Sábado</td><td>4:00 pm, 7:00 pm y 9:00 pm</td></tr>
+      <tr><td>Domingo</td><td>4:00 pm y 7:00 pm</td></tr>
+    </table>
+  </section>
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <form onsubmit="enviar(event)">
+      <input type="text" id="nombre" placeholder="Tu nombre" required>
+      <input type="email" placeholder="Tu correo" required>
+      <textarea placeholder="Tu mensaje" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+    <p id="mensaje"></p>
+  </section>
+  <footer>
+    <img src="imageeee.png" alt="Logo final">
+    <p>Cineteca · El Cbtis 131</p>
+  </footer>
+  <script src="cine.js"></script>
+</body>
+</html>
